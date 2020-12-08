@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Javascript</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Sarabun:wght@500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="technical-css/technical-style.css">
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+
+<!-- Left Navigation Bar -->
+
+<body>
+  <nav id="navbar">
+    <div class="container-fluid nav-bar">
+      <header class="header-title"><img src="images/javascript-logo.jpg" class="header-logo">Javascript</header>
+      <ul class="list">
+        <li>
+          <a class="nav-link" href="#what_is_javascript">Introduction</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="#JavaScript_and_Java">JavaScript vs. Java</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="#hello_world">Hello World</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="#statements">Statements</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="#variables">Variables</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="data-types" data-toggle="dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Types</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#strings">Strings</a>
+            <a class="dropdown-item" href="#numbers">Numbers</a>
+            <a class="dropdown-item" href="#booleans">Booleans</a>
+            <a class="dropdown-item" href="#arrays">Arrays</a>
+            <a class="dropdown-item" href="#objects">Objects</a>
+            <a class="dropdown-item" href="#undefined">Undefined</a>
+            <a class="dropdown-item" href="#null ">Null</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-doc">
+    <h1 class="content-title">Introduction to Javascript</h1>
+    <section class="main-section">
+      <header id="what_is_javascript">What is JavaScript?</header>
+      <p>JavaScript is the world's most popular programming language. It is a full-fledged dynamic programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla
+        Foundation, and the Mozilla Corporation).</p>
+      <p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
+      <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:
+      <ul>
+        <li>
+          Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D
+          graphics and audio samples.
+        </li>
+        <li>
+          Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.
+        </li>
+        <li>
+          Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.
+        </li>
+      </ul>
+      </p>
+    </section>
+
+    <section class="main-section" id="gray-section">
+      <header id="JavaScript_and_Java">JavaScript and Java</header>
+      <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax,
+        naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+      <p>
+        In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object
+        model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative
+        requirements. Functions can be properties of objects, executing as loosely typed methods.
+      </p>
+      <p>
+        JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement
+        interfaces. Variables, parameters, and function return types are not explicitly typed.
+      </p>
+    </section>
+
+    <section class="main-section">
+      <header id="hello_world">Hello World</header>
+      <p>
+        To get started with writing JavaScript, write your first "Hello world" JavaScript code:
+      <p>
+
+      </p>
+      <p> <code>function greetMe(yourName) { alert("Hello " + yourName); }
+          greetMe("World");</code>
+      </p>
+    </section>
+
+    <section class="main-section" id="gray-section">
+      <header id="statements">Statements</header>
+      <p>A script is a series of instructions that a computer can follow one-by-one. Each individual instruction or step is known as a statement. Statements end with a semicolon <code>;</code>. Statements are executed one by one, in the same order as
+        they are
+        written. Example: </p>
+      <p><code>a = 5; b = 6; c = a + b;</code></p>
+      <p> Code Blocks </p>
+      <p>
+        Java script statements can be grouped together in code blocks, insue curly brackets <code>{ }</code>. Code blocks define statements to be executed together.One place you will find statements grouped together in blocks, is in JavaScript
+        functions:</p>
+      <p><code>function myFunction () {
+          document.getElementById("demo1").innerHTML = "Hello Dolly!"; </br>
+          documentß.getElementById("demo2").innerHTML = "How are you?"; </br>
+          }</code>
+
+      </p>
+    </section>
+
+    <section class="main-section">
+      <header id="variables">Variables</header>
+      <p>
+        A variable is a container for a value, like a number we might use in a sum, or a string that we might use as part of a sentence. But one special thing about variables is that their contained values can change. You can declare a variable in
+        three ways.
+      <ol>
+        <li>
+          With the keyward var. This Syntac can be used to declar both local and global variables. </br>
+          <p>
+            <code> var x = 42 </code>
+          </p>
+        </li>
+        <li>
+          Assigning it a value. This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant. </br>
+          <p>
+            <code>x = 42</code>
+          </p>
+        </li>
+        <li>
+          With the keyword let. This syntax can be used to declare a block scope local variable. See Variable scope below.</br>
+          <code>let y = 13</code>
+        </li>
+      </ol>
+      </p>
+    </section>
+
+    <section class="main-section" id="gray-section">
+      <header id="data-types">Data Types</header>
+      <p>Data types speficy what kind of data can be stored and manipulated within a program. There are six basic data types in JavaScript which can be divied into three main cateogories: primitive (or primary), composite (or reference), and special
+        data types.</p>
+      <h5 id="strings">Strings</h5>
+      <p>String data types consists of letters and other characters. Strings are written with either single or double quotes. <br />
+        <code>var carName1 = "Volvo XC60"; // Using double quotes </br> var carName2 = 'Volvo XC60'; // Using single quotes</code>
+      </p>
+
+      <h5 id="numbers">Numbers</h5>
+      <p> Numbers can be written with, or without decimals and they can also be written as negative numbers. </br>
+        <code>var x1 = 34.00; // Written with decimals </br> var x2 = 34; // Written without decimals</code>
+      </p>
+
+      <h5 id="booleans">Booleans</h5>
+      <p>
+        Boolean data types can have one of two values: true or false.</p>
+      <p>
+        <code>var x = 5; var y = 5; var z = 6; </br> (x == y) // Returns true </br> (x == z) // Returns false</code>
+      </p>
+
+
+      <h5 id="arrays">Arrays</h5>
+      <p>
+        Arrays are special types of variables. It stores a list of values. Arrays are written with square brackets and array items are seperated by commas. Use arrays whenever you are working with a list or a set of values that are related to each
+        other.</br>
+        <code>var cars = ["Saab", "Volvo", "BMW"];</code>
+      </p>
+
+      <h5 id="objects">Objects</h5>
+      <p>
+        Objects are written with curly braces <code>{}</code>.
+      </p>
+
+      <h5 id="unefined">Undefined</h5>
+      <p>
+        A variable without a value has the value of undefined. Type is also unefined. </br>
+        <code>car = undefined; // Value is undefined, type is undefined</code>
+      </p>
+
+      <h5 id="null">Null</h5>
+      <p>
+        In JavaScript null is "nothing". It is supposed to be something that doesn't exist. Unfortunately, in JavaScript, the data type of <code>null</code> is an object.
+      </p>
+    </section>
+
+  </main>
+</body>
+</html>
